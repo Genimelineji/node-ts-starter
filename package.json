@@ -5,9 +5,9 @@
 	"main": "./dist/index.js",
 	"scripts": {
 		"start:pm2": "pm2 start ./dist/index.js --name='node-ts-starter' -i 0",
-		"start:dev": "./node_modules/.bin/nodemon --exec ./node_modules/.bin/ts-node index.ts",
-		"start:compiled": "./node_modules/.bin/nodemon ./dist/index.js",
-		"build": "tsc",
+		"start:dev": "npx nodemon --exec ts-node index.ts",
+		"start:compiled": "npx nodemon ./dist/index.js",
+		"build": "npx tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -20,7 +20,6 @@
 		"starter"
 	],
 	"author": "Genimelineji <genimelineji@gmail.com>",
-	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/Genimelineji/node-ts-starter/issues"
 	},
